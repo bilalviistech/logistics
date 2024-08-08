@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Logostics</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta charset="UTF-8">
+  <!-- <meta name="keywords" content="HTML, CSS, JavaScript"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="images/logo.png" type="image/png" sizes="114*114">
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+  <!-- link owl carasoul  -->
+  <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+  <!-- link slick carasoul  -->
+  <link href="css/slick.css" rel="stylesheet" type="text/css">
+  <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
+
+  <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <script src="app.js"></script>
+</head>
+
+<body>
+
+  <div class="header">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="70%" class="img-fluid" alt="img"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT US</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SERVICES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="freight.html">Get a Freight Quote</a></li>
+                <li><a class="dropdown-item" href="register.html">Carrier Registration</a></li>
+                <li><a class="dropdown-item" href="load.html">All Load Board</a></li>
+              </ul>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">SERVICES</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT US</a>
+            </li>
+          </ul>
+          <span class="nav_flex">
+            <div class="nav_flex1">
+              <i class="fa-regular fa-circle-phone"></i>
+              <p>(417) 732-2842 </p>
+            </div>
+            <div class="nav_flex2">
+              <a href="register1.html">LOGIN</a>
+            </div>
+          </span>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+<section class="my1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <div class="my2">
+                    <h2>My Loads</h2>
+                </div>
+                <div>
+                    <ul class="nav nav-pills mb-3" id="pills-tab1" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link link2 active" id="pills-booked-tab" data-bs-toggle="pill" data-bs-target="#pills-booked" type="button" role="tab" aria-controls="pills-booked" aria-selected="true">BOOKED</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link link2" id="pills-PAST-tab" data-bs-toggle="pill" data-bs-target="#pills-PAST" type="button" role="tab" aria-controls="pills-PAST" aria-selected="false">PAST</button>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-booked" role="tabpanel" aria-labelledby="pills-booked-tab">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="my3">
+                                                <th scope="col">REFRENCE</th>
+                                                <th scope="col">PICKUP</th>
+                                                <th scope="col">DELIVERY</th>
+                                                <th scope="col">DRIVER</th>
+                                                <th scope="col">STATUS</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                    <div class="mapouter">
+                                        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=372&amp;height=605&amp;hl=en&amp;q=new york&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-PAST" role="tabpanel" aria-labelledby="pills-PAST-tab">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9">
+                                    <table class="table">
+                                        <thead>
+                                            <tr class="my3">
+                                                <th scope="col">REFRENCE</th>
+                                                <th scope="col">PICKUP</th>
+                                                <th scope="col">DELIVERY</th>
+                                                <th scope="col">DRIVER</th>
+                                                <th scope="col">STATUS</th>
+                                                <th scope="col"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+                                            <tr class="my3">
+                                                <td>UF-5828543031</td>
+                                                <td>DALLAS, TX <br> AUG 26-14:30 CST</td>
+                                                <td>HOUSTON <br> AUG 26-19:30 CST</td>
+                                                <td>WAYMO VIA</td>
+                                                <td>EN ROUTE TO DELIVERY HUB</td>
+                                                <td>....</td>
+                                            </tr>
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
+                                    <div class="mapouter">
+                                        <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=372&amp;height=605&amp;hl=en&amp;q=new york&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://gachanox.io/">Gacha Nox</a></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 footer3 mt-5">
+        <a href="index.html"> <img src="images/logo1.png" class="img-fluid" alt="img"> </a>
+        <div class="footer1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+
+
+        <!-- Social Box -->
+        <ul class="d-flex social-box">
+          <li>
+            <a href="#" class="fab fa-facebook-f"></a>
+          </li>
+          <li>
+            <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+          </li>
+          <li>
+            <a href="#" class="fa-brands fa-instagram"></a>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 footer4">
+        <h4 class="mb-4">QUICK LINKS</h4>
+        <ul class="footer2">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="#">SERVICES</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3  footer4">
+        <h4 class="mb-4">CONTACT US</h4>
+        <div class="footer3">
+          <h6>Address</h6>
+          <p>Houston 8835 Long Point Rd</p>
+          <h6>Email Address</h6>
+          <p>Info@gmail.com</p>
+          <h6>Phone Number</h6>
+          <p>(832) 393-2000</p>
+        </div>
+      </div>
+
+
+      <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center  mb-3">
+        <div class="footer-bottom">
+          <div class="clearfix">
+            <div class="pull-left">
+              <div class="copyright ">
+                Copyright © 2023 Herbert Logistics - All Rights Reserved.
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js.map"></script> -->
+<script src="js/slick.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/owl-custom.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  document.getElementsByTagName("body")[0].style.overflowX = "hidden";
+</script>
+
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2.5
+      },
+      1000: {
+        items: 2.5
+      }
+    }
+  })
+</script>
+
+<!-- upload file  -->
+
+<script>
+  $("#FileInput").on('change', function(e) {
+    var labelVal = $(".title").text();
+    var oldfileName = $(this).val();
+    fileName = e.target.value.split('\\').pop();
+
+    if (oldfileName == fileName) {
+      return false;
+    }
+    var extension = fileName.split('.').pop();
+
+    if ($.inArray(extension, ['jpg', 'jpeg', 'png']) >= 0) {
+      $(".filelabel i").removeClass().addClass('fa fa-file-image-o');
+      $(".filelabel i, .filelabel .title").css({
+        'color': '#208440'
+      });
+      $(".filelabel").css({
+        'border': ' 2px solid #208440'
+      });
+    } else if (extension == 'pdf') {
+      $(".filelabel i").removeClass().addClass('fa fa-file-pdf-o');
+      $(".filelabel i, .filelabel .title").css({
+        'color': 'red'
+      });
+      $(".filelabel").css({
+        'border': ' 2px solid red'
+      });
+
+    } else if (extension == 'doc' || extension == 'docx') {
+      $(".filelabel i").removeClass().addClass('fa fa-file-word-o');
+      $(".filelabel i, .filelabel .title").css({
+        'color': '#2388df'
+      });
+      $(".filelabel").css({
+        'border': ' 2px solid #2388df'
+      });
+    } else {
+      $(".filelabel i").removeClass().addClass('fa fa-file-o');
+      $(".filelabel i, .filelabel .title").css({
+        'color': 'black'
+      });
+      $(".filelabel").css({
+        'border': ' 2px solid black'
+      });
+    }
+
+    if (fileName) {
+      if (fileName.length > 10) {
+        $(".filelabel .title").text(fileName.slice(0, 4) + '...' + extension);
+      } else {
+        $(".filelabel .title").text(fileName);
+      }
+    } else {
+      $(".filelabel .title").text(labelVal);
+    }
+  });
+</script>
+
+<!-- full page loader -->
+
+<script>
+  // Set the time in milliseconds for the loader to be visible
+  const loaderTime = 3000;
+
+  // Function to hide the loader
+  function hideLoader() {
+    const loader = document.getElementById('cms-loading');
+    loader.style.display = 'none';
+  }
+
+  // Wait for the specified time and then hide the loader
+  setTimeout(hideLoader, loaderTime);
+</script>
+
+</body>
+
+</html>
